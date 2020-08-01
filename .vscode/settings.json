@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1740b859-d2f3-4648-a136-1ab4beb81caa/resourceGroups/guestagentworkspace/providers/Microsoft.Web/sites/agentapp",
+    "appService.deploySubpath": "."
+}

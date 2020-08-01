@@ -1,0 +1,34 @@
+<soap-env:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <soap-env:Header>
+      <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="1.0">
+         <eb:From>
+            <eb:PartyId type="urn:x12.org:IO5:01">99999</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>IM07</eb:CPAId>
+         <eb:ConversationId>ACS_Svc_Test2009-10-28-94929</eb:ConversationId>
+         <eb:Service eb:type="OTA">ACS_AirportFlightListRQ</eb:Service>
+         <eb:Action>ACS_AirportFlightListRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>mid:20001209-133003-2333@clientofsabre.com</eb:MessageId>
+            <eb:Timestamp>2001-02-15T11:15:12Z</eb:Timestamp>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+         <wsse:BinarySecurityToken>binaryToken</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </soap-env:Header>
+   <soap-env:Body>
+      <n1:ACS_AirportFlightListRQ xmlns:n1="http://services.sabre.com/ACS/BSO/airportFlightList/v3">
+         <FlightInfo>
+            <Airline>flightno</Airline>
+             <DepartureDate>fltdate</DepartureDate>
+            <Origin>station</Origin>
+            <HoursFromCurrentTime>hrsfrom</HoursFromCurrentTime>
+         </FlightInfo>
+         <Client>KIOSK</Client>
+      </n1:ACS_AirportFlightListRQ>
+   </soap-env:Body>
+</soap-env:Envelope>

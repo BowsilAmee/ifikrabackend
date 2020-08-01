@@ -1,0 +1,36 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+   <SOAP-ENV:Header>
+      <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="1.0">
+         <eb:From>
+            <eb:PartyId type="urn:x12.org:IO5:01">999999</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>≈</eb:CPAId>
+         <eb:ConversationId>conversationID</eb:ConversationId>
+         <eb:Service eb:type="OTA">SessionCreateRQ</eb:Service>
+         <eb:Action>SessionCreateRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>1000</eb:MessageId>
+            <eb:Timestamp>2012-06-07T10:00:00</eb:Timestamp>
+            <eb:TimeToLive>2013-06-06T23:59:59</eb:TimeToLive>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+         <wsse:UsernameToken>
+            <wsse:Username>902771</wsse:Username>
+            <wsse:Password>V4L9KR83</wsse:Password>
+            <Organization>EY</Organization>
+            <Domain>EY</Domain>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <SessionCreateRQ>
+         <POS>
+            <Source PseudoCityCode="ipcc"/>
+         </POS>
+      </SessionCreateRQ>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
