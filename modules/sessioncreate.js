@@ -12,7 +12,7 @@ module.exports = (callback) => {
         'soapAction': 'https://sws-crt.cert.havail.sabre.com#SessionCreateRQ',
     };
 //TODO: Move URL for ENV
-    var filePath = "Guest/GuestAgent/wsdl/sessioncreate.xml";
+    var filePath = "./wsdl/sessioncreate.xml";
     const xml = fs.readFileSync(filePath, 'utf-8');
     (async () => {
         const { response } = await soapRequest({ url: url, headers: soapHeader, xml: xml, timeout: 1000 }); // Optional timeout parameter(milliseconds)

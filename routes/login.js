@@ -32,13 +32,13 @@ router.post('/', function (req, res, next) {
                 updateredisdata(accessToken, refreshToken, sessionexpire, username, sabresession).then(function (resultVal) {
                     if (resultVal == "OK") {
 
-                        res.json({
+                        res.json([{
                             accessToken,
                             refreshToken,
                             sessionexpire,
                             sabresession
                             
-                        });
+                        }]);
                     }
                     else {
                         console.error(error)

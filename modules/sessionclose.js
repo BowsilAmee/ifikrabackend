@@ -12,7 +12,7 @@ module.exports = (callback) => {
         'soapAction': 'https://sws-crt.cert.havail.sabre.com#SessionCloseRQ',
     };
     //TODO: Move URL for ENV
-    var filePath = "Guest/GuestAgent/wsdl/SessionCloseRQ.xml";
+    var filePath = "./wsdl/SessionCloseRQ.xml";
     const xml = fs.readFileSync(filePath, 'utf-8');
     (async () => {
         const { response } = await soapRequest({ url: url, headers: soapHeader, xml: xml, timeout: 1000 }); // Optional timeout parameter(milliseconds)

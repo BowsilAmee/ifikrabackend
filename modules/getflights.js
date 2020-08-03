@@ -12,7 +12,7 @@ module.exports = (flightno, station, dateval, timefromno, binarytoken, callback)
     'soapAction': 'https://sws-crt.cert.havail.sabre.com#ACS_AirportFlightListRQ',
   };
   //TODO: Move URL for ENV
-  var filePath = "Guest/GuestAgent/wsdl/ACS_AirportFlightListRQ.xml";
+  var filePath = "./wsdl/ACS_AirportFlightListRQ.xml";
   const xml = fs.readFileSync(filePath, 'utf-8');
 
   var str = xml.toString();
@@ -52,8 +52,15 @@ function parsexml(xmldoc) {
     return new Promise(function (resolve, reject) {
       const obj = xml2json.toJson(xmldoc, { object: true });
        if (obj != null) {
-         resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"]["AirportFlight"]);
 
+         if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"] !=null)
+         {
+         resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"]["AirportFlight"]);
+         }
+         else
+         {
+           resolve("No Flights Found.")
+         }
       }
       else {
         reject(error);
