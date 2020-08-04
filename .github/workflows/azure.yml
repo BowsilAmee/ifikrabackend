@@ -1,10 +1,11 @@
-name: Etihad AgentApp Back End Build
+name: Etihad AgentApp Azure App Service Publish
 
 # Execute workflow on a new release
 # Please create a repo secret named agentpubprofile and contents of Webapp publishprofile
 on:
-  release:
-    types: [created]
+  push:
+    branches: 
+      - master
 
 env:
   AZURE_WEBAPP_NAME: agentapp         # set this to your application's name
@@ -23,12 +24,10 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
     - name: npm install, build, and test
       run: |
-        # Build and test the project, then
-        # deploy to Azure Web App.
         npm install
         npm run build --if-present
         npm run test --if-present
-    - name: 'Deploy to  AgentApp Azure App Service'
+    - name: 'Deploy to AgentApp Azure App Service'
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
