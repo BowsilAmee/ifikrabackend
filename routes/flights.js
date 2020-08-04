@@ -14,6 +14,7 @@ const authenticateJWT = (req, res, next) => {
 
     jwt.verify(token, accessTokenSecret, (err, user) => {
       if (err) {
+        console.log(err);
         return res.sendStatus(403);
       }
 
@@ -21,6 +22,7 @@ const authenticateJWT = (req, res, next) => {
       next();
     });
   } else {
+  
     res.sendStatus(401);
   }
 };
