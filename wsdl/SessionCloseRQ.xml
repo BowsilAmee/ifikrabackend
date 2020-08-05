@@ -8,7 +8,7 @@
             <eb:PartyId type="urn:x12.org:IO5:01">2323</eb:PartyId>
          </eb:To>
          <eb:CPAId>ipcc</eb:CPAId>
-         <eb:ConversationId>conversationID</eb:ConversationId>
+         <eb:ConversationId>Agent_APP</eb:ConversationId>
          <eb:Service eb:type="OTA">SessionCloseRQ</eb:Service>
          <eb:Action>SessionCloseRQ</eb:Action>
          <eb:MessageData>

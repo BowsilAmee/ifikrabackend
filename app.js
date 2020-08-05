@@ -9,6 +9,7 @@ var getflights = require('./routes/flights');
 var loginagent = require('./routes/login');
 var agenttoken = require('./routes/token');
 var getsample = require('./routes/getsample');
+var flightinfo = require('./routes/flightdetails');
 
 //  var flightdetails = require('./routes/getflightdetails');
 var app = express();
@@ -29,7 +30,7 @@ app.set('views', './views');
 app.use('/flights', getflights);
 app.use('/login', loginagent);
 app.use('/token', agenttoken);
-
+app.use('/flightinfo', flightinfo);
 app.use('/test', getsample);
 
 //app.use('/flightdetails', flightdetails);

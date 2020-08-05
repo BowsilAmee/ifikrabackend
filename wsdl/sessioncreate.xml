@@ -8,7 +8,7 @@
             <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
          </eb:To>
          <eb:CPAId>≈</eb:CPAId>
-         <eb:ConversationId>conversationID</eb:ConversationId>
+         <eb:ConversationId>Agent_APP</eb:ConversationId>
          <eb:Service eb:type="OTA">SessionCreateRQ</eb:Service>
          <eb:Action>SessionCreateRQ</eb:Action>
          <eb:MessageData>

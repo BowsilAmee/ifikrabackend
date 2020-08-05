@@ -7,8 +7,8 @@
          <eb:To>
             <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
          </eb:To>
-         <eb:CPAId>IM07</eb:CPAId>
-         <eb:ConversationId>ACS_Svc_Test2009-10-28-94929</eb:ConversationId>
+         <eb:CPAId>Agent_APP</eb:CPAId>
+         <eb:ConversationId>Agent_APP</eb:ConversationId>
          <eb:Service eb:type="OTA">ACS_AirportFlightListRQ</eb:Service>
          <eb:Action>ACS_AirportFlightListRQ</eb:Action>
          <eb:MessageData>

@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:v3="http://services.sabre.com/ACS/BSO/flightDetail/v3">
+    <soapenv:Header>
+        <eb:MessageHeader soapenv:mustUnderstand="1" eb:version="2.0">
+            <eb:From>
+                <eb:PartyId type="URI">Agent_APP</eb:PartyId>
+            </eb:From>
+            <eb:To>
+                <eb:PartyId type="URI">webservices.sabre.com</eb:PartyId>
+            </eb:To>
+            <eb:ConversationId>Agent_APP</eb:ConversationId>
+            <eb:CPAId>Agent_APP</eb:CPAId>
+            <eb:Service eb:type="OTA">ACS_FlightDetailRQ</eb:Service>
+            <eb:Action>ACS_FlightDetailRQ</eb:Action>
+        </eb:MessageHeader>
+        <wsse:Security>
+            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">binaryToken</wsse:BinarySecurityToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v3:ACS_FlightDetailRQ>
+            <FlightInfo>
+                <Airline>airlinesEY</Airline>
+                <Flight>FlightNoEY</Flight>
+                <DepartureDate>DepartureDateEY</DepartureDate>
+                <Origin>FlightOriginEY</Origin>
+            </FlightInfo>
+        </v3:ACS_FlightDetailRQ>
+    </soapenv:Body>
+</soapenv:Envelope>
