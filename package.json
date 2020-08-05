@@ -14,10 +14,10 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.5.1",
+    "merge-json": "0.1.0-b.3",
     "mongodb": "^3.6.0",
     "morgan": "~1.9.1",
     "redis": "^3.0.2",
     "xml2json": "^0.12.0"
-   
   }
 }
