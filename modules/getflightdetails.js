@@ -57,7 +57,7 @@ function parsexml(xmldoc) {
                 if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_FlightDetailRS"] != null) {
                     var object1 = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_FlightDetailRS"]["ItineraryResponseList"]["ItineraryInfoResponse"];
                     var object2 = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_FlightDetailRS"]["PassengerCounts"];
-                    var object3 = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_FlightDetailRS"]
+                    var object3 = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_FlightDetailRS"]["LegInfoList"]
 
                     resolve(getItineraryInfoResponse(object1, object2, object3));
                     //resolve(object3);
@@ -109,21 +109,21 @@ function parsexml(xmldoc) {
             var LocalOnBoard_business;
             var TotalOnBoard_business;
             var TotalBoardingPassIssued_business;
-            var classOfService_first;
-            var Authorized_first;
-            var Booked_first;
-            var Available_first;
-            var Thru_first;
-            var Local_first;
-            var NonRevenueLocal_first;
-            var NonRevenueThru_first;
-            var PaperTicket_first;
-            var ElectronicTicket_first;
+            var classOfService_first="";
+            var Authorized_first = "";
+            var Booked_first = "";
+            var Available_first = "";
+            var Thru_first = "";
+            var Local_first = "";
+            var NonRevenueLocal_first = "";
+            var NonRevenueThru_first = "";
+            var PaperTicket_first = "";
+            var ElectronicTicket_first = "";
             var Kiosk_first;
-            var StandbyRestriction_first;
-            var LocalOnBoard_first;
-            var TotalOnBoard_first;
-            var TotalBoardingPassIssued_first;
+            var StandbyRestriction_first = "";
+            var LocalOnBoard_first = "";
+            var TotalOnBoard_first = "";
+            var TotalBoardingPassIssued_first;  
             var object2 = jsonobj2;
             for (let index = 0; index < jsonobj2.length; index++) {
                 switch (jsonobj2[index].classOfService) {
@@ -252,17 +252,25 @@ function parsexml(xmldoc) {
                     StandbyRestriction_eco_val: StandbyRestriction_eco,
                     LocalOnBoard_eco_val: LocalOnBoard_eco,
                     TotalOnBoard_eco_val: TotalOnBoard_eco,
-                    TotalBoardingPassIssued_eco_val: TotalBoardingPassIssued_eco
+                    TotalBoardingPassIssued_eco_val: TotalBoardingPassIssued_eco,
+                    LegCity: jsonobj3.LegInfo[0].LegCity,
+                    ControllingCityInd: jsonobj3.LegInfo[0].ControllingCityInd,
+                    LegStatus: jsonobj3.LegInfo[0].LegStatus,
+                    LegDate: jsonobj3.LegInfo[0].LegDate,
+                    LegDepartureTime: jsonobj3.LegInfo[0].LegDepartureTime,
+                    LegApp: jsonobj3.LegInfo[0].LegApp,
+                    LegCityArr: jsonobj3.LegInfo[1].LegCityArr,
+                    LegArrivalTime: jsonobj3.LegInfo[1].LegArrivalTime,
+                    LegApp: jsonobj3.LegInfo[1].LegApp
                     
                   
                 }
 
             ];
+
+            var fltconfig = jsonobj1.SeatConfig;
+            var res= fltconfig.split("");
             return (jsonstr);
-
-
-
-
 
         } catch (error) {
 
