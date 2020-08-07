@@ -1,5 +1,7 @@
 const xml2json = require('xml2json');
-module.exports = (flightno, station, dateval, timefromno, binarytoken, callback) => {
+
+
+module.exports = (airline, flightno, depdate, origin, queryval, binarytoken, callback) => {
     // let sum = a + b
     let error = null
     const soapRequest = require('easy-soap-request');
@@ -9,22 +11,24 @@ module.exports = (flightno, station, dateval, timefromno, binarytoken, callback)
     const url = 'https://sws-crt.cert.havail.sabre.com';
     const soapHeader = {
         'Content-Type': 'text/xml;charset=UTF-8',
-        'soapAction': 'https://sws-crt.cert.havail.sabre.com#ACS_AirportFlightListRQ',
+        'soapAction': 'https://sws-crt.cert.havail.sabre.com#ACS_PassengerListRQ',
     };
     //TODO: Move URL for ENV
     var filePath = "./wsdl/ACS_PassengerListRQ.xml";
     const xml = fs.readFileSync(filePath, 'utf-8');
-
+    //TODO: Need to add multi Line
+    var typelist = "<DisplayCode>" + queryval +"</DisplayCode>";
     var str = xml.toString();
     var mapObj = {
         binaryToken: binarytoken,
-        flightno: flightno,
-        station: station,
-        hrsfrom: timefromno,
-        fltdate: dateval
+        airlinesstr: airline,
+        flightnostr: flightno,
+        depaturedatestr: depdate,
+        flightoriginstr: origin,
+        codestring: typelist
     };
 
-    str = str.replace(/binaryToken|flightno|station|hrsfrom|fltdate/gi, function (matched) {
+    str = str.replace(/binaryToken|airlinesstr|flightnostr|depaturedatestr|codestring|flightoriginstr/gi, function (matched) {
         return mapObj[matched];
     });
 
@@ -53,8 +57,8 @@ function parsexml(xmldoc) {
             const obj = xml2json.toJson(xmldoc, { object: true });
             if (obj != null) {
 
-                if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"] != null) {
-                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"]["AirportFlight"]);
+                if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]!= null) {
+                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]);
                 }
                 else {
                     resolve("No Flights Found.")

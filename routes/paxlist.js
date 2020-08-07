@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const jwt = require('jsonwebtoken');
 const xml2json = require('xml2json');
+const { query } = require('express');
 
 //TODO: Move to Env variable
 const accessTokenSecret = '1QNuYeLRO4u4NeH2OeVvr4xvHRlXRe7cCVwPUIWSlif5bTpnPSJ2VFaliNVN';
@@ -38,11 +39,11 @@ router.post('/', authenticateJWT, function (req, res, next) {
             getbinarytoken(token).then(function (binarytoken) {
 
                 var jsonObject = eval('(' + binarytoken + ')');
-                const { airline, station, depdate, hrsno } = req.body;
+                const { airline, flightno, depdate, origin, queryval} = req.body;
 
                 const add = require("../modules/getpaxlist.js")
 
-                add(airline, station, depdate, hrsno, jsonObject.binarytoken, (err, result) => {
+                add(airline, flightno,depdate,origin, queryval,jsonObject.binarytoken, (err, result) => {
                     if (err) { // Best practice to handle your errors
                         console.log(err)
                     } else { // Implement the logic, what you want to do once you recieve the response back 

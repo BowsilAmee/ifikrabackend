@@ -11,6 +11,7 @@ var agenttoken = require('./routes/token');
 var getsample = require('./routes/getsample');
 var flightinfo = require('./routes/flightdetails');
 
+var paxdetails = require('./routes/paxlist');
 //  var flightdetails = require('./routes/getflightdetails');
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/flights', getflights);
 app.use('/login', loginagent);
 app.use('/token', agenttoken);
 app.use('/flightinfo', flightinfo);
+app.use('/paxdetails', paxdetails)
 app.use('/test', getsample);
 
 //app.use('/flightdetails', flightdetails);
