@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:v300="http://services.sabre.com/ACS/BSO/passengerList/v200" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+
+   <soapenv:Header>
+      <eb:MessageHeader soapenv:mustUnderstand="1" eb:version="2.0">
+         <eb:From>
+            <eb:PartyId eb:type="urn:x12.org:IO5:01">999999</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId eb:type="urn:x12.org:IO5:01">123123</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>OneApp_Mobile_App</eb:CPAId>
+         <eb:ConversationId>OneApp_Mobile_App</eb:ConversationId>
+         <eb:Service eb:type="OTA">ACS_FlightDetailRQ</eb:Service>
+         <eb:Action>ACS_PassengerListRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>mid:20001209-133003-2333@clientofsabre.com</eb:MessageId>
+            <eb:Timestamp>2001-02-15T11:15:12Z</eb:Timestamp>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+         <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">{{binaryToken}}</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v300:ACS_PassengerListRQ>
+         <Itinerary>
+      <Airline>airlinesstr</Airline>
+            <Flight>flightnostr</Flight>
+          <DepartureDate>depaturedatestr</DepartureDate>
+            <Origin>flightoriginstr</Origin>
+            
+         </Itinerary>
+         <DisplayCodeRequest>
+            <DisplayCodes>
+              codestring
+            </DisplayCodes>
+         </DisplayCodeRequest>
+      </v300:ACS_PassengerListRQ>
+   </soapenv:Body>
+</soapenv:Envelope>
