@@ -52,16 +52,62 @@ module.exports = (airline, flightno, depdate, origin, queryval, binarytoken, cal
 
 //To Generate the Sabre session for the Sabre Traction
 function parsexml(xmldoc) {
+    var o = new Object()
+    var paxlist = {} // empty Object
+    var key = 'paxlist';
+    o[key] = []; // empty Array, which you can push() values into
+
     try {
         return new Promise(function (resolve, reject) {
             const obj = xml2json.toJson(xmldoc, { object: true });
             if (obj != null) {
 
                 if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]!= null) {
-                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]);
+                    if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]  != null) {
+                    var myobj = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"] ;
+                  
+                    var profile = JSON.parse(JSON.stringify( myobj["PassengerInfo"]));
+
+                    
+                    for (var i = 0; i < profile.length; i++) {
+
+                         
+                    
+                        var data = {
+                            LineNumber: profile[i].LineNumber,
+                            LastName: profile[i].LastName,
+                            FirstName: profile[i].FirstName,
+                            PassengerID: profile[i].PassengerID,
+                            PNRLocator: profile[i].PNRLocator.$t,
+                            nameAssociationID: profile[i].PNRLocator.nameAssociationID,
+                            GroupCode: profile[i].GroupCode,
+                            BookingClass: profile[i].BookingClass,
+                            Cabin: profile[i].Cabin,
+                            Destination: profile[i].Destination,
+                            Seat: profile[i].Seat,
+                            BoardingPassFlag: profile[i].BoardingPassFlag,
+                            PassengerType: profile[i].PassengerType,
+                            BagCount: profile[i].BagCount,
+                            CheckInNumber: profile[i].CheckInNumber
+
+                        };
+                        o[key].push(data);
+                     
+                    }
+
+
+                //  resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]);
+
+resolve(o);
+                    }
+                    else
+                    {
+                        resolve("No Pax data found.") 
+                    }
+
                 }
                 else {
-                    resolve("No Flights Found.")
+                    resolve("No Pax data found")
                 }
             }
             else {

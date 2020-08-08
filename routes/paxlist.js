@@ -48,7 +48,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
                         console.log(err)
                     } else { // Implement the logic, what you want to do once you recieve the response back 
                         console.log(result);
-                        if (result != null) { res.send(result) } else { res.send("No Flights Avaliable") }
+                        if (result != null) { res.send(result) } else { res.send("No pax data Avaliable") }
 
                     }
                 })
