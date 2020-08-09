@@ -66,11 +66,11 @@ function parsexml(xmldoc) {
                     if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]  != null) {
                     var myobj = obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"] ;
                   
-                    var profile = JSON.parse(JSON.stringify( myobj["PassengerInfo"]));
+                    var profile =   JSON.parse(JSON.stringify( myobj["PassengerInfo"]));
 
                         if (profile.length !=null)
                         {
-                            for (var i = 0; i < profile.length - 1; i++) {
+                            for (var i = 0; i <= profile.length-1; i++) {
 
 
 
