@@ -68,33 +68,63 @@ function parsexml(xmldoc) {
                   
                     var profile = JSON.parse(JSON.stringify( myobj["PassengerInfo"]));
 
-                    
-                    for (var i = 0; i < profile.length; i++) {
+                        if (profile.length !=null)
+                        {
+                            for (var i = 0; i < profile.length - 1; i++) {
 
-                         
-                    
-                        var data = {
-                            LineNumber: profile[i].LineNumber,
-                            LastName: profile[i].LastName,
-                            FirstName: profile[i].FirstName,
-                            PassengerID: profile[i].PassengerID,
-                            PNRLocator: profile[i].PNRLocator.$t,
-                            nameAssociationID: profile[i].PNRLocator.nameAssociationID,
-                            GroupCode: profile[i].GroupCode,
-                            BookingClass: profile[i].BookingClass,
-                            Cabin: profile[i].Cabin,
-                            Destination: profile[i].Destination,
-                            Seat: profile[i].Seat,
-                            BoardingPassFlag: profile[i].BoardingPassFlag,
-                            PassengerType: profile[i].PassengerType,
-                            BagCount: profile[i].BagCount,
-                            CheckInNumber: profile[i].CheckInNumber
 
-                        };
-                        o[key].push(data);
-                     
-                    }
 
+                                var data = {
+                                    LineNumber: profile[i].LineNumber,
+                                    LastName: profile[i].LastName,
+                                    FirstName: profile[i].FirstName,
+                                    PassengerID: profile[i].PassengerID,
+                                    PNRLocator: profile[i].PNRLocator.$t,
+                                    nameAssociationID: profile[i].PNRLocator.nameAssociationID,
+                                    GroupCode: profile[i].GroupCode,
+                                    BookingClass: profile[i].BookingClass,
+                                    Cabin: profile[i].Cabin,
+                                    Destination: profile[i].Destination,
+                                    Seat: profile[i].Seat,
+                                    BoardingPassFlag: profile[i].BoardingPassFlag,
+                                    PassengerType: profile[i].PassengerType,
+                                    BagCount: profile[i].BagCount,
+                                    CheckInNumber: profile[i].CheckInNumber
+
+                                };
+                                o[key].push(data);
+
+                            }
+
+
+
+                        }
+                        else
+                        {
+                                var data = {
+                                    LineNumber: profile.LineNumber,
+                                    LastName: profile.LastName,
+                                    FirstName: profile.FirstName,
+                                    PassengerID: profile.PassengerID,
+                                    PNRLocator: profile.PNRLocator.$t,
+                                    nameAssociationID: profile.PNRLocator.nameAssociationID,
+                                    GroupCode: profile.GroupCode,
+                                    BookingClass: profile.BookingClass,
+                                    Cabin: profile.Cabin,
+                                    Destination: profile.Destination,
+                                    Seat: profile.Seat,
+                                    BoardingPassFlag: profile.BoardingPassFlag,
+                                    PassengerType: profile.PassengerType,
+                                    BagCount: profile.BagCount,
+                                    CheckInNumber: profile.CheckInNumber
+
+                                };
+                                o[key].push(data);
+
+                            
+                        }
+
+              
 
                 //  resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_PassengerListRS"]["PassengerInfoList"]);
 
