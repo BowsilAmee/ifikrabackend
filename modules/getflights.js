@@ -59,7 +59,7 @@ function parsexml(xmldoc) {
          }
          else
          {
-           resolve("No Flights Found.")
+           resolve("No Flights Found.");
          }
       }
       else {
