@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2011/10" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext">
+   <SOAP-ENV:Header>
+      <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="1.0">
+         <eb:ConversationId>MTT_Mobile_App</eb:ConversationId>
+         <eb:From>
+            <eb:PartyId type="urn:x12.org:IO5:01">99999</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>MTT_Mobile_App</eb:CPAId>
+         <eb:Service eb:type="">ContextChange</eb:Service>
+         <eb:Action>ContextChangeLLSRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>mid:20001209-133003-2333@clientofsabre.com</eb:MessageId>
+            <eb:Timestamp>2001-02-15T11:15:12Z</eb:Timestamp>
+            <eb:TimeToLive>2001-02-15T11:15:12Z</eb:TimeToLive>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+         <wsse:BinarySecurityToken>binaryToken</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns:ContextChangeRQ TimeStamp="2011-06-01T16:30:00" Version="2.0.3">
+         <ns:ChangeAAA AccountingCity="AccountingCityVal" PseudoCityCode="PseudoCityCodeVal" />
+      </ns:ContextChangeRQ>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

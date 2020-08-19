@@ -12,6 +12,8 @@ var getsample = require('./routes/getsample');
 var flightinfo = require('./routes/flightdetails');
 
 var paxdetails = require('./routes/paxlist');
+
+var getUrlData = require('./routes/getUrlData');
 //  var flightdetails = require('./routes/getflightdetails');
 var app = express();
 
@@ -34,7 +36,7 @@ app.use('/token', agenttoken);
 app.use('/flightinfo', flightinfo);
 app.use('/paxdetails', paxdetails)
 app.use('/test', getsample);
-
+app.use('/getmappath', getUrlData)
 //app.use('/flightdetails', flightdetails);
 
 // catch 404 and forward to error handler
