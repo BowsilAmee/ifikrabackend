@@ -14,7 +14,10 @@ var flightinfo = require('./routes/flightdetails');
 var paxdetails = require('./routes/paxlist');
 
 var getUrlData = require('./routes/getUrlData');
-//  var flightdetails = require('./routes/getflightdetails');
+ var savepassengerid = require('./routes/savepassengerid');
+var Sendsms = require('./routes/Sendsms');
+
+var getsmspayload = require('./routes/getsmspayload');
 var app = express();
 
 app.set('port', process.env.PORT || 3030)
@@ -37,7 +40,9 @@ app.use('/flightinfo', flightinfo);
 app.use('/paxdetails', paxdetails)
 app.use('/test', getsample);
 app.use('/getmappath', getUrlData)
-//app.use('/flightdetails', flightdetails);
+app.use('/savepassengerid', savepassengerid);
+app.use('/Sendsms', Sendsms);
+app.use('/getsmspayload', getsmspayload);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

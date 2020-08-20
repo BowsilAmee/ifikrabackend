@@ -4383,7 +4383,7 @@
         "is_gate": "false"
     },
     {
-        "name": "03",
+        "name": "3",
         "description": "",
         "id": 112728,
         "map_id": "B1-UL1-ID038",
@@ -4392,7 +4392,7 @@
         "is_gate": "true"
     },
     {
-        "name": "04",
+        "name": "4",
         "description": "",
         "id": 112729,
         "map_id": "B1-UL1-ID037",
@@ -4401,7 +4401,7 @@
         "is_gate": "true"
     },
     {
-        "name": "05",
+        "name": "5",
         "description": "",
         "id": 112730,
         "map_id": "B1-UL1-ID032",
@@ -4410,7 +4410,7 @@
         "is_gate": "true"
     },
     {
-        "name": "06",
+        "name": "6",
         "description": "",
         "id": 112731,
         "map_id": "B1-UL1-ID031",
@@ -4419,7 +4419,7 @@
         "is_gate": "true"
     },
     {
-        "name": "07",
+        "name": "7",
         "description": "",
         "id": 112732,
         "map_id": "B1-UL1-ID028",
@@ -4428,7 +4428,7 @@
         "is_gate": "true"
     },
     {
-        "name": "08",
+        "name": "8",
         "description": "",
         "id": 112733,
         "map_id": "B1-UL1-ID027",
@@ -4437,7 +4437,7 @@
         "is_gate": "true"
     },
     {
-        "name": "09",
+        "name": "9",
         "description": "",
         "id": 112734,
         "map_id": "B1-UL1-ID024",
