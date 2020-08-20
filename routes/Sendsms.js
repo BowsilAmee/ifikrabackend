@@ -3,9 +3,8 @@ var router = express.Router();
 const jwt = require('jsonwebtoken');
 const xml2json = require('xml2json');
 const { query } = require('express');
-const accountSid = 'AC161d35e3365f707793e9ae359a790c6e';
-const authToken = '695d5f7be331996ee450935ca1441758';
-const client = require('twilio')(accountSid, authToken);
+require('dotenv').config();
+
 
 //TODO: Move to Env variable
 const accessTokenSecret = '1QNuYeLRO4u4NeH2OeVvr4xvHRlXRe7cCVwPUIWSlif5bTpnPSJ2VFaliNVN';
@@ -46,7 +45,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
                 {
 
                     var url = "https://eygapp.azurewebsites.net/g/" + passengerId;
-                    sendsms("+971501990826", url).then(function (restulans) {
+                    sendsms("+971526233762", url).then(function (restulans) {
                         {
 
                             res.json(restulans);
@@ -108,7 +107,10 @@ function updateredisdata(passengerId) {
 function sendsms(phonenumber, url) {
     try {
         return new Promise(function (resolve, reject) {
+            const accountSid = process.env.TWILIO_ACC_SID;
+            const authToken = process.env.TWILIO_AUTH_TOKEN;
 
+            const client = require('twilio')(accountSid, authToken);
             client.messages
                 .create({ body: 'Hello Guest visit  ' + url + ' for assistance to Gate - Etihad Airways', from: '+18509405577', to: phonenumber })
                 .then(message => resolve(message.sid));

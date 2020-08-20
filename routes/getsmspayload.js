@@ -3,9 +3,7 @@ var router = express.Router();
 const jwt = require('jsonwebtoken');
 const xml2json = require('xml2json');
 const { query } = require('express');
-const accountSid = 'AC161d35e3365f707793e9ae359a790c6e';
-const authToken = '695d5f7be331996ee450935ca1441758';
-const client = require('twilio')(accountSid, authToken);
+
 
 
 router.post('/',  function (req, res, next) {
