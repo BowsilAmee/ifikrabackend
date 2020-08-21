@@ -40,7 +40,7 @@ try {
 
             const { passengerId, url, mapId, location, typeVal, isconnectingGate} = req.body;
 
-            updateredisdata(passengerId, url, mapId, location, typeVal, isconnectingGate).then(function (resultVal) {
+            updateredisdata(passengerId, url, mapId, location, typeVal, isconnectingGate).then(function (error,resultVal) {
                 if (resultVal == "OK") {
                     res.json({
                         passengerId,
@@ -74,9 +74,26 @@ function updateredisdata(passengerId, url, mapId, location, typeVal, isconnectin
     try {
         return new Promise(function (resolve, reject) {
 
+
+            var jsonkey = {} // empty Object
+            var key = 'urlpayload';
+            jsonkey[key] = []; // empty Array, which you can push() values into
+
+
+            var data = {
+                passengerId: passengerId,
+                url: url,
+                mapId:mapId,
+                location :location,
+                typeVal: typeVal,
+                isconnectingGate: isconnectingGate
+            };
+         
+            jsonkey[key].push(data);
+
             const add = require("../modules/redisconnection.js")
-            var jwtvalue = "{'passengerId':'" + passengerId + "'    ,'url':'" + url + "','mapId':'" + mapId + "','location':'" + location + "','typeVal':'" + typeVal + "','isconnectingGate':'" + isconnectingGate + "'}";
-            add(passengerId, jwtvalue, "set", (err, result) => {
+            //var jwtvalue = "{'passengerId':'" + passengerId + "'    ,'url':'" + url + "','mapId':'" + mapId + "','location':'" + location + "','typeVal':'" + typeVal + "','isconnectingGate':'" + isconnectingGate + "'}";
+            add(passengerId, JSON.stringify(jsonkey), "set", (err, result) => {
                 if (err) { // Best practice to handle your errors
                     console.log(err)
                 } else { // Implement the logic, what you want to do once you recieve the response back 
@@ -87,9 +104,9 @@ function updateredisdata(passengerId, url, mapId, location, typeVal, isconnectin
 
 
         });
-    } catch (error) {
+    } catch (err) {
 
-        reject(error);
+        reject(err);
 
     }
 
