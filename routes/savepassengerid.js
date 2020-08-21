@@ -38,13 +38,12 @@ try {
 
         if (req.body != null) {
 
-            const { passengerId, url, mapId, location, typeVal, isconnectingGate} = req.body;
+            const { passengerId, url, mapId1, mapId2, location, typeVal, isconnectingGate} = req.body;
 
-            updateredisdata(passengerId, url, mapId, location, typeVal, isconnectingGate).then(function (error,resultVal) {
-                if (resultVal == "OK") {
+            updateredisdata(passengerId, url, mapId1, mapId2, location, typeVal, isconnectingGate).then(function (returnvalue, error) {
+                if (returnvalue == "OK") {
                     res.json({
                         passengerId,
-                        mapId,
                         url,
                         isconnectingGate
 
@@ -70,7 +69,7 @@ try {
 
 
 //To update the Redis data
-function updateredisdata(passengerId, url, mapId, location, typeVal, isconnectingGate) {
+function updateredisdata(passengerId, url, mapId1, mapId2,location, typeVal, isconnectingGate) {
     try {
         return new Promise(function (resolve, reject) {
 
@@ -83,7 +82,8 @@ function updateredisdata(passengerId, url, mapId, location, typeVal, isconnectin
             var data = {
                 passengerId: passengerId,
                 url: url,
-                mapId:mapId,
+                mapId1:mapId1,
+                mapId2: mapId2,
                 location :location,
                 typeVal: typeVal,
                 isconnectingGate: isconnectingGate
