@@ -17,7 +17,7 @@ router.post('/',  function (req, res, next) {
 
             updateredisdata(passengerId).then(function (resultVal) {
                 {
-                    res.json(resultVal);
+                    res.json( JSON.parse(resultVal));
             
 
                 }
