@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const xml2json = require('xml2json');
 const { query } = require('express');
 var fs = require('fs');
-
+var azure = require('azure-sb');
 //TODO: Move to Env variable
 const accessTokenSecret = '1QNuYeLRO4u4NeH2OeVvr4xvHRlXRe7cCVwPUIWSlif5bTpnPSJ2VFaliNVN';
 var token;
@@ -36,52 +36,34 @@ router.post('/', authenticateJWT, function (req, res, next) {
     try {
 
         if (req.body != null) {
-
             getbinarytoken(token).then(function (binarytoken) {
 
                 var jsonObject = eval('(' + binarytoken + ')');
-                const { gate } = req.body;
-                var filePath = "./jsondata/auhairport.json";
-                // read file sample.json file
-                fs.readFile(filePath,
-                    // callback function that is called when reading file is done
-                    function (err, data) {
-                        // json data
-                        var jsonData = data;
+                const { alertmessage, url, username } = req.body;
+                console.log(req)
+                var notificationHubService = azure.createNotificationHubService('customerapp', 'Endpoint=sb://agentapp.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=5QjYNGnubcdnCqa7CXIxbDGLDE7jIDZ2EAFNiT8E7Ok=');
+                var payload = {
+                    username: username,
+                    alert: alertmessage,
+                    url: url
+                };
 
-                        // parse json
-                        var jsonParsed = JSON.parse(jsonData);
-                        for (let index = 0; index < jsonParsed.length; index++) {
-                            //const element = array[index];
+                notificationHubService.apns.send(null, payload, function (error) {
+                    if (!error) {
+                        res.send(200, 'Notification Sent');
+                    }
 
-                            if (jsonParsed[index].is_gate !== null && jsonParsed[index].is_gate == "true") {
-
-                                if (jsonParsed[index].name == gate) {
-                                    var value = jsonParsed[index];
-                                    res.send(200, value);
-                                }
-                                
-
-                                
-                            }
+                }).catch(function (error) {
+                    console.error(error)
+                    return res.sendStatus(500, "unable to auth user or system Down");
+                });
 
 
 
-                        }
-                    });
-
-            }).catch(function (error) {
-                console.error(error)
-                return res.sendStatus(500, "unable to auth user or system Down");
             });
 
 
-
         }
-
-
-
-
 
     } catch (error) {
         console.log(error);
