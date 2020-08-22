@@ -40,6 +40,12 @@ router.post('/', authenticateJWT, function (req, res, next) {
 
                 var jsonObject = eval('(' + binarytoken + ')');
                 const { alertmessage, url, username } = req.body;
+                //var jsonBody = JSON.parse(req.body);
+               // var stringified = JSON.stringify(req.body);
+                //var parsedObj = JSON.parse(stringified);
+
+                //console.log(parsedObj);
+
                 console.log(req)
                 var notificationHubService = azure.createNotificationHubService('customerapp', 'Endpoint=sb://agentapp.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=5QjYNGnubcdnCqa7CXIxbDGLDE7jIDZ2EAFNiT8E7Ok=');
                 var payload = {
@@ -50,6 +56,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
 
                 notificationHubService.apns.send(null, payload, function (error) {
                     if (!error) {
+                        console.log("Sucess.")
                         res.send(200, 'Notification Sent');
                     }
 
