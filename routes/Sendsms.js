@@ -39,13 +39,13 @@ router.post('/', authenticateJWT, function (req, res, next) {
 
         if (req.body != null) {
 
-            const { passengerId } = req.body;
+            const { passengerId, phonenumber} = req.body;
 
             updateredisdata(passengerId).then(function (resultVal) {
                 {
 
-                    var url = "https://eygapp.azurewebsites.net/g/" + passengerId;
-                    sendsms("+971526233762", url).then(function (restulans) {
+                    var url = "https://eya.azurewebsites.net/g/" + passengerId;
+                    sendsms(phonenumber, url).then(function (restulans) {
                         {
 
                             res.json(restulans);
