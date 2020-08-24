@@ -48,8 +48,19 @@ try {
           console.log(err)
         } else { // Implement the logic, what you want to do once you recieve the response back 
           console.log(result);
-          if (result !=null)
-          { res.send(result)}else
+          var resultObject = result;
+
+          if (resultObject !=null)
+
+        ///Implement to fix new screen
+          { 
+
+            for (let index = 0; index < resultObject.length; index++) {
+
+              resultObject[index]["Destination"] = station + " - " + resultObject[0]["Destination"]
+            }
+//End if you want to remove that
+            res.send(resultObject)}else
           { res.send("No Flights Avaliable")}
          
         }
