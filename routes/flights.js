@@ -57,7 +57,7 @@ try {
 
             for (let index = 0; index < resultObject.length; index++) {
 
-              resultObject[index]["Destination"] = station + " - " + resultObject[0]["Destination"]
+              resultObject[index]["Destination"] = station + " - " + resultObject[index]["Destination"]
             }
 //End if you want to remove that
             res.send(resultObject)}else
