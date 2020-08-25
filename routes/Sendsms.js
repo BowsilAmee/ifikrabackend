@@ -44,7 +44,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
             updateredisdata(passengerId).then(function (resultVal) {
                 {
 
-                    var url = "https://eya.azurewebsites.net/g/" + passengerId;
+                    var url = "https://eya.azurewebsites.net/g/" + passengerId +" ";
                     sendsms(phonenumber, url).then(function (restulans) {
                         {
 
