@@ -128,6 +128,7 @@ function createsabresession() {
                     const obj = xml2json.toJson(result, { object: true });
                     var tokenval = obj["soap-env:Envelope"]["soap-env:Header"]["wsse:Security"]["wsse:BinarySecurityToken"].$t;
                     resolve(tokenval);
+                    //Demo
                 }
             })
 
