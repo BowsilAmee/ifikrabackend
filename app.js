@@ -17,6 +17,7 @@ var sendNotification = require('./routes/sendNotification');
  var savepassengerid = require('./routes/savepassengerid');
 var Sendsms = require('./routes/Sendsms');
 
+var sosrequest = require('./routes/sosrequest');
 var getsmspayload = require('./routes/getsmspayload');
 var app = express();
 
@@ -43,6 +44,8 @@ app.use('/notify', sendNotification)
 app.use('/savepassengerid', savepassengerid);
 app.use('/Sendsms', Sendsms);
 app.use('/getsmspayload', getsmspayload);
+app.use('/sosrequest', sosrequest);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
