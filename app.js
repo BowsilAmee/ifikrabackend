@@ -16,7 +16,7 @@ var paxdetails = require('./routes/paxlist');
 var sendNotification = require('./routes/sendNotification');
  var savepassengerid = require('./routes/savepassengerid');
 var Sendsms = require('./routes/Sendsms');
-
+var soslist = require('./routes/soslist')
 var sosrequest = require('./routes/sosrequest');
 var getsmspayload = require('./routes/getsmspayload');
 var app = express();
@@ -45,7 +45,7 @@ app.use('/savepassengerid', savepassengerid);
 app.use('/Sendsms', Sendsms);
 app.use('/getsmspayload', getsmspayload);
 app.use('/sosrequest', sosrequest);
-
+app.use('/soslist', soslist);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
