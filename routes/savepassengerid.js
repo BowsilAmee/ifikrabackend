@@ -75,8 +75,8 @@ function updateredisdata(passengerId, url, mapId1, mapId2,location, typeVal, isc
 
 
             var jsonkey = {} // empty Object
-            var key = 'urlpayload';
-            jsonkey[key] = []; // empty Array, which you can push() values into
+          //  var key = 'urlpayload';
+          jsonkey = []; // empty Array, which you can push() values into
 
 
             var data = {
@@ -93,7 +93,7 @@ function updateredisdata(passengerId, url, mapId1, mapId2,location, typeVal, isc
                 pnr:pnr
             };
          
-            jsonkey[key].push(data);
+            jsonkey.push(data);
 
             const add = require("../modules/redisconnection.js")
             //var jwtvalue = "{'passengerId':'" + passengerId + "'    ,'url':'" + url + "','mapId':'" + mapId + "','location':'" + location + "','typeVal':'" + typeVal + "','isconnectingGate':'" + isconnectingGate + "'}";
