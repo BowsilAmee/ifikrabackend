@@ -39,7 +39,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
             getbinarytoken(token).then(function (binarytoken) {
 
                 var jsonObject = eval('(' + binarytoken + ')');
-                const { alertmessage, url, username } = req.body;
+                const { alertmessage, url, username, paxid } = req.body;
                 //var jsonBody = JSON.parse(req.body);
                // var stringified = JSON.stringify(req.body);
                 //var parsedObj = JSON.parse(stringified);
@@ -51,7 +51,8 @@ router.post('/', authenticateJWT, function (req, res, next) {
                 var payload = {
                     username: username,
                     alert: alertmessage,
-                    url: url
+                    url: url,
+                    paxid: paxid
                 };
 
                 notificationHubService.apns.send(null, payload, function (error) {
