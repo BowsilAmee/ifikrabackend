@@ -5,9 +5,9 @@ var MongoClient = require('mongodb').MongoClient;
 /* GET users listing. */
 router.post('/', function (req, res, next) {
     console.log(req)
-    const { paxid, flightno, depdate, status, sossatus, lat, long, paxname,pnr } = req.body;
+    const { paxid, flightno, depdate, status, sossatus, lat, log, paxname,pnr } = req.body;
 
-    updatesos(paxid, flightno, depdate, status, sossatus, "web", lat, long, paxname, pnr).then(function (resultVal) {
+    updatesos(paxid, flightno, depdate, status, sossatus, "web", lat, log, paxname, pnr).then(function (resultVal) {
         // filter user from the users array by username and password
         if (resultVal != null) {
             return res.sendStatus(201, "Created SOS Item");
@@ -26,7 +26,7 @@ router.post('/', function (req, res, next) {
 //To get user details from DB
 //User name as string
 //password as clear text
-function updatesos(paxidval, flightnoval, depdateval, statusval, sossatusval, updatebyval, lat, long, paxname, pnr) {
+function updatesos(paxidval, flightnoval, depdateval, statusval, sossatusval, updatebyval, lat, log, paxname, pnr) {
 
 
     return new Promise(function (resolve, reject) {
@@ -41,7 +41,7 @@ function updatesos(paxidval, flightnoval, depdateval, statusval, sossatusval, up
                 if (err) throw err;
                 var dbo = db.db("userdetails");
 
-                var myobj = { paxid: paxidval, flightno: flightnoval, depdate: depdateval, status: sossatusval, status: statusval, updatedby: updatebyval, created: Date.now().toString(), lat: lat, long: long, paxname: paxname, pnr: pnr };
+                var myobj = { paxid: paxidval, flightno: flightnoval, depdate: depdateval, status: sossatusval, status: statusval, updatedby: updatebyval, created: Date.now().toString(), lat: lat, long: log, paxname: paxname, pnr: pnr };
                 dbo.collection("soslist").insertOne(myobj, function (err, res) {
                     if (err) throw err;
                     console.log("1 document inserted");
