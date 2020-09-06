@@ -41,7 +41,7 @@ function updatesos(paxidval, flightnoval, depdateval, statusval, sossatusval, up
                 if (err) throw err;
                 var dbo = db.db("userdetails");
 
-                var myobj = { paxid: paxidval, flightno: flightnoval, depdate: depdateval, status: sossatusval, status: statusval, updatedby: updatebyval, created: Date.now().toString(), lat: lat, long: log, paxname: paxname, pnr: pnr };
+                var myobj = { paxid: paxidval, flightno: flightnoval, depdate: depdateval, status: sossatusval, status: statusval, updatedby: updatebyval, created: Date.now().toString(), lat: lat, log: log, paxname: paxname, pnr: pnr };
                 dbo.collection("soslist").insertOne(myobj, function (err, res) {
                     if (err) throw err;
                     console.log("1 document inserted");
