@@ -40,10 +40,12 @@ function updatesos(paxidval, flightnoval, depdateval, statusval, sossatusval, up
 
                 if (err) throw err;
                 var dbo = db.db("userdetails");
-
-                var myobj = { paxid: paxidval, flightno: flightnoval, depdate: depdateval,status: statusval};
-                dbo.collection("soslist").findOne(myobj,
-                    function (err, result) {
+                //var query = "{flightno: '" + flightnoval + "', depdate: '" + depdateval + "', status: '" + statusval+"' }";
+                var myobj = { flightno: flightnoval, depdate: depdateval,status: statusval};
+                dbo.collection("soslist").find(myobj).toArray(function (err, result) {  
+               
+                // dbo.collection("soslist").find(myobj).to,
+                //     function (err, result) {
                         if (err) {
                             console.log("Unexpected error");
                             reject(err);
