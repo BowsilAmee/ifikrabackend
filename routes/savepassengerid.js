@@ -97,7 +97,7 @@ function updateredisdata(passengerId, url, mapId1, mapId2,location, typeVal, isc
 
             const add = require("../modules/redisconnection.js")
             //var jwtvalue = "{'passengerId':'" + passengerId + "'    ,'url':'" + url + "','mapId':'" + mapId + "','location':'" + location + "','typeVal':'" + typeVal + "','isconnectingGate':'" + isconnectingGate + "'}";
-            add(passengerId, JSON.stringify(jsonkey), "set", (err, result) => {
+            add(passengerId, JSON.stringify(data), "set", (err, result) => {
                 if (err) { // Best practice to handle your errors
                     console.log(err)
                 } else { // Implement the logic, what you want to do once you recieve the response back 
