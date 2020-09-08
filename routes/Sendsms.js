@@ -112,7 +112,7 @@ function sendsms(phonenumber, url) {
 
             const client = require('twilio')(accountSid, authToken);
             client.messages
-                .create({ body: 'Hello Guest visit  ' + url + ' for assistance to Gate - Etihad Airways', from: '+18509405577', to: phonenumber })
+                .create({ body: 'Hello Guest visit  ' + url + ' for assistance to Gate your gate close in 15 min - Etihad Airways', from: '+18509405577', to: phonenumber })
                 .then(message => resolve(message.sid));
 
 
