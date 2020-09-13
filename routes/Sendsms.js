@@ -71,7 +71,7 @@ router.post('/', authenticateJWT, function (req, res, next) {
         }
 
     } catch (error) {
-        return res.sendStatus(500, " Unable to Update the Redis Cache");
+        return res.sendStatus(500, "Unable to Update the Redis Cache");
     }
 });
 
