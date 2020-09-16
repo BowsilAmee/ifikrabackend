@@ -19,6 +19,9 @@ var Sendsms = require('./routes/Sendsms');
 var soslist = require('./routes/soslist')
 var sosrequest = require('./routes/sosrequest');
 var getsmspayload = require('./routes/getsmspayload');
+var offerslist = require('./routes/getancillaryoffer');
+var paymentmaster = require('./routes/paymentmaster');
+var sessioncreate = require('./routes/createsession');
 var app = express();
 
 app.set('port', process.env.PORT || 3030)
@@ -46,6 +49,9 @@ app.use('/Sendsms', Sendsms);
 app.use('/getsmspayload', getsmspayload);
 app.use('/sosrequest', sosrequest);
 app.use('/soslist', soslist);
+app.use('/offer',offerslist);
+app.use('/paymentmaster', paymentmaster);
+app.use('/paymentsession', sessioncreate)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,85 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <t:Transaction xmlns:t="xxs">
+            <tc>
+                <iden u="EYDAirline" p="23UqtTPoxYYSzB3pN" pseudocity="AJ89" agt="xmluser001" agtpwd="KQg4nUnDg9uV" agtrole="Ticketing Agent" agy="86493503"/>
+                <agent user="xmluser001"/>
+                <trace>AJ89_EYD</trace>
+                <script engine="FLXDM" name="eyd-SSH-dispatch.flxdm"/>
+            </tc>
+        </t:Transaction>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+    	 <ns1:XXTransaction xmlns:ns1="xxs">
+            <REQ>
+      
+            <ServiceListRQ TransactionIdentifier="07929bb8-cc32-4419-bc77-e47575a757aa" ApplicationID="wci.bff.cts.baggage-offer-service.ancillaryms" CorrelationID="87bfb93c-a817-b4bd-a221-53a3ddc59e5d">
+                <SaleInfo>
+                    <CountryCode>AE</CountryCode>
+                </SaleInfo>
+                <RecordLocator Source="EYD">PNR</RecordLocator>
+                <TravelerIDs AssociationID="1" PaxType="ADT">
+                    <TravelerReferences Type="ADT">
+                        <Surname>LastName</Surname>
+                        <GivenName>FirstName</GivenName>
+                        <Title>MR</Title>
+                    </TravelerReferences>
+                </TravelerIDs>
+               
+                <!--PostTicketing-->
+                <TouchPoint>PostTicketing</TouchPoint>
+                <OriginDestination>
+                    <Flight AssociationID="2" FlightRefKey="2" Source="EYD">
+                        <AirlineCode>EY</AirlineCode>
+                        <FlightNumber>FlightNo</FlightNumber>
+                        <OperatingCarrier>
+                            <AirlineCode>EY</AirlineCode>
+                            <FlightNumber>FlightNo</FlightNumber>
+                        </OperatingCarrier>
+                        <ActionCode>HK</ActionCode>
+                        <ClassOfService>OperatingClassOfService</ClassOfService>
+                        <FareBasisCode>HLOWAE/YF</FareBasisCode>
+                        <Departure>
+                            <AirportCode>FlightOrigin</AirportCode>
+                            <Date>DepartureDate</Date>
+                            <Time>DepartureTime</Time>
+                        </Departure>
+                        <Arrival>
+                            <AirportCode>ArrivalAirCode</AirportCode>
+                            <Date>ArrivalDate</Date>
+                            <Time>ArrivalTime</Time>
+                        </Arrival>
+                        <Equipment>
+                            <Code>EquipmentCode</Code>
+                        </Equipment>
+                    </Flight>
+                   
+                </OriginDestination>
+                <JourneyControlData>
+                    <jcdFlight FlightRefKey="2" Source="EYD">
+                        <jcdDeparture>
+                            <CityCode>FlightOrigin</CityCode>
+                        </jcdDeparture>
+                        <jcdArrival>
+                            <CityCode>FlightDestination</CityCode>
+                        </jcdArrival>
+                        <jcdDate Qualifier="DEPARTURE">DepartureDate</jcdDate>
+                        <Carrier>
+                            <AirlineCode>EY</AirlineCode>
+                            <FlightNumber>FlightNumber</FlightNumber>
+                        </Carrier>
+                        <OperatingCarrier>
+                            <AirlineCode>EY</AirlineCode>
+                            <FlightNumber>FlightNumber</FlightNumber>
+                        </OperatingCarrier>
+                        <ClassOfService>OperatingClassOfService</ClassOfService>
+                        <ActionCode>HK</ActionCode>
+                    </jcdFlight>
+                  
+                </JourneyControlData>
+            </ServiceListRQ>
+    </REQ>
+     </ns1:XXTransaction>
+           
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
