@@ -65,7 +65,47 @@ function parsexml(xmldoc) {
 
 
                 var objval;
+                ///TODO: Get this FLX Harcoding WIFI , Instatnce Upgrade , Launge
 
+
+                objval = {
+                    'Description': "Instance Upgrade",
+                    'SubCode': "UP1",
+                    'ServiceCode': "UP1",
+                    "Method": "EA",
+                    'Amount': "500",
+                    "Currency": "AED",
+                    'ValidatingCarrier': "EY",
+                    'Source': "EYD"
+                }
+                jsonbody.push(objval);
+
+
+                objval = {
+                    'Description': "WIFLY",
+                    'SubCode': "UP1",
+                    'ServiceCode': "UP1",
+                    "Method": "EA",
+                    'Amount': "50",
+                    "Currency": "AED",
+                    'ValidatingCarrier': "EY",
+                    'Source': "EYD"
+                }
+                jsonbody.push(objval);
+
+                objval = {
+                    'Description': "Lounge Access",
+                    'SubCode': "UP1",
+                    'ServiceCode': "UP1",
+                    "Method": "EA",
+                    'Amount': "50",
+                    "Currency": "AED",
+                    'ValidatingCarrier': "EY",
+                    'Source': "EYD"
+                }
+                jsonbody.push(objval);
+
+//END
 
 
                 if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"] != null) {
@@ -89,46 +129,6 @@ function parsexml(xmldoc) {
 
 
                     }
-///TODO: Get this FLX Harcoding WIFI , Instatnce Upgrade , Launge
-
-
-                    objval = {
-                        'Description': "Instance Upgrade",
-                        'SubCode': "UP1",
-                        'ServiceCode': "UP1",
-                        "Method": "EA",
-                        'Amount': "500",
-                        "Currency": "AED",
-                        'ValidatingCarrier':"EY",
-                        'Source': "EYD"
-                    }
-                    jsonbody.push(objval);
-
-
-                    objval = {
-                        'Description': "WIFLY",
-                        'SubCode': "UP1",
-                        'ServiceCode': "UP1",
-                        "Method": "EA",
-                        'Amount': "50",
-                        "Currency": "AED",
-                        'ValidatingCarrier': "EY",
-                        'Source': "EYD"
-                    }
-                    jsonbody.push(objval);
-
-                    objval = {
-                        'Description': "Lounge Access",
-                        'SubCode': "UP1",
-                        'ServiceCode': "UP1",
-                        "Method": "EA",
-                        'Amount': "50",
-                        "Currency": "AED",
-                        'ValidatingCarrier': "EY",
-                        'Source': "EYD"
-                    }
-                    jsonbody.push(objval);
-
 
                     resolve(jsonbody);
                 }
