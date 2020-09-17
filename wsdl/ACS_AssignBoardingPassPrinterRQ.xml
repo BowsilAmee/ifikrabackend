@@ -1,0 +1,29 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:v3="http://services.sabre.com/ACS/BSO/assignBoardingPassPrinter/v3">
+    <SOAP-ENV:Header>
+        <mes:MessageHeader mes:version="?">
+            <mes:From>
+                <mes:PartyId mes:type="URI">clientURI.com</mes:PartyId>
+            </mes:From>
+            <mes:To>
+                <mes:PartyId mes:type="URI">webservices.sabre.com</mes:PartyId>
+            </mes:To>
+            <mes:CPAId>MTT_Mobile_App</mes:CPAId>
+            <mes:ConversationId>MTT_Mobile_App</mes:ConversationId>
+            <mes:Service>ACS_AssignBPPrinterRQ</mes:Service>
+            <mes:Action>ACS_AssignBPPrinterRQ</mes:Action>
+            <mes:MessageData>
+                <mes:MessageId>mid:20001209-133003-2333@clientofsabre.com</mes:MessageId>
+                <mes:Timestamp>2001-02-15T11:15:12Z</mes:Timestamp>
+            </mes:MessageData>
+        </mes:MessageHeader>
+        <wsse:Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">binaryToken</wsse:BinarySecurityToken>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <v3:ACS_AssignBoardingPassPrinterRQ>
+            <Airline>EY</Airline>
+            <PrinterLniata>0299AB</PrinterLniata>
+        </v3:ACS_AssignBoardingPassPrinterRQ>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

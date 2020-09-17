@@ -1,5 +1,5 @@
 const xml2json = require('xml2json');
-module.exports = (PNR, LastName, FirstName, FlightNo, OperatingClassOfService, FlightOrigin, DepartureDate, DepartureTime, ArrivalAirCode, ArrivalDate, ArrivalTime, EquipmentCode	, callback) => {
+module.exports = (PNR, LastName, FirstName, FlightNo, OperatingClassOfService, FlightOrigin, DepartureDate, DepartureTime, ArrivalAirCode, ArrivalDate, ArrivalTime, EquipmentCode, callback) => {
     // let sum = a + b
     let error = null
     const soapRequest = require('easy-soap-request');
@@ -9,7 +9,7 @@ module.exports = (PNR, LastName, FirstName, FlightNo, OperatingClassOfService, F
     const url = 'https://stg.farelogix.com:443/xmlts/sandbox-ey';
     const soapHeader = {
         'Content-Type': 'text/xml;charset=UTF-8'
-      
+
     };
     //TODO: Move URL for ENV
     var filePath = "./wsdl/FLXAnx.xml";
@@ -26,7 +26,7 @@ module.exports = (PNR, LastName, FirstName, FlightNo, OperatingClassOfService, F
         DepartureDate: DepartureDate,
         DepartureTime: DepartureTime,
         ArrivalAirCode: ArrivalAirCode,
-        ArrivalDate: ArrivalDate, 
+        ArrivalDate: ArrivalDate,
         ArrivalTime: ArrivalTime,
         EquipmentCode: EquipmentCode
     };
@@ -63,33 +63,73 @@ function parsexml(xmldoc) {
 
                 var jsonbody = [];
 
-               
+
                 var objval;
 
 
 
                 if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"] != null) {
-                   
+
                     var jsonobject = obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"]["Service"]
 
                     for (let index = 0; index < jsonobject.length; index++) {
                         console.log(jsonobject[index]);
 
                         objval = {
-     'Description': jsonobject[index]["Description"],
-     'SubCode': jsonobject[index]["SubCode"],
-     'ServiceCode': jsonobject[index]["ServiceCode"],
-     "Method": jsonobject[index]["Method"],
-     'Amount': jsonobject[index]["Amount"],
+                            'Description': jsonobject[index]["Description"],
+                            'SubCode': jsonobject[index]["SubCode"],
+                            'ServiceCode': jsonobject[index]["ServiceCode"],
+                            "Method": jsonobject[index]["Method"],
+                            'Amount': jsonobject[index]["Amount"],
                             "Currency": jsonobject[index]["ServicePrice"]["CurrencyCode"].$t,
-     'ValidatingCarrier': jsonobject[index]["ValidatingCarrier"],
-     'Source': jsonobject[index]["Source"]
-                }
+                            'ValidatingCarrier': jsonobject[index]["ValidatingCarrier"],
+                            'Source': jsonobject[index]["Source"]
+                        }
                         jsonbody.push(objval);
 
-    
-}
-                   
+
+                    }
+///TODO: Get this FLX Harcoding WIFI , Instatnce Upgrade , Launge
+
+
+                    objval = {
+                        'Description': "Instance Upgrade",
+                        'SubCode': "UP1",
+                        'ServiceCode': "UP1",
+                        "Method": "EA",
+                        'Amount': "500",
+                        "Currency": "AED",
+                        'ValidatingCarrier':"EY",
+                        'Source': "EYD"
+                    }
+                    jsonbody.push(objval);
+
+
+                    objval = {
+                        'Description': "WIFLY",
+                        'SubCode': "UP1",
+                        'ServiceCode': "UP1",
+                        "Method": "EA",
+                        'Amount': "50",
+                        "Currency": "AED",
+                        'ValidatingCarrier': "EY",
+                        'Source': "EYD"
+                    }
+                    jsonbody.push(objval);
+
+                    objval = {
+                        'Description': "Lounge Access",
+                        'SubCode': "UP1",
+                        'ServiceCode': "UP1",
+                        "Method": "EA",
+                        'Amount': "50",
+                        "Currency": "AED",
+                        'ValidatingCarrier': "EY",
+                        'Source': "EYD"
+                    }
+                    jsonbody.push(objval);
+
+
                     resolve(jsonbody);
                 }
                 else {
