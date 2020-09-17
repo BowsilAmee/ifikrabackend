@@ -60,8 +60,37 @@ function parsexml(xmldoc) {
             const obj = xml2json.toJson(xmldoc, { object: true });
             if (obj != null) {
 
+
+                var jsonbody = [];
+
+               
+                var objval;
+
+
+
                 if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"] != null) {
-                    resolve(obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"]["Service"]);
+                   
+                    var jsonobject = obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"]["Service"]
+
+                    for (let index = 0; index < jsonobject.length; index++) {
+                        console.log(jsonobject[index]);
+
+                        objval = {
+     'Description': jsonobject[index]["Description"],
+     'SubCode': jsonobject[index]["SubCode"],
+     'ServiceCode': jsonobject[index]["ServiceCode"],
+     "Method": jsonobject[index]["Method"],
+     'Amount': jsonobject[index]["Amount"],
+                            "Currency": jsonobject[index]["ServicePrice"]["CurrencyCode"].$t,
+     'ValidatingCarrier': jsonobject[index]["ValidatingCarrier"],
+     'Source': jsonobject[index]["Source"]
+                }
+                        jsonbody.push(objval);
+
+    
+}
+                   
+                    resolve(jsonbody);
                 }
                 else {
                     resolve("No Data Found.");
