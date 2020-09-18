@@ -22,6 +22,11 @@ var getsmspayload = require('./routes/getsmspayload');
 var offerslist = require('./routes/getancillaryoffer');
 var paymentmaster = require('./routes/paymentmaster');
 var sessioncreate = require('./routes/createsession');
+
+var parsebcbp = require('./routes/parsebcbp');
+
+
+
 var app = express();
 
 app.set('port', process.env.PORT || 3030)
@@ -52,7 +57,7 @@ app.use('/soslist', soslist);
 app.use('/offer',offerslist);
 app.use('/paymentmaster', paymentmaster);
 app.use('/paymentsession', sessioncreate)
-
+app.use('/parsebcbp', parsebcbp);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
