@@ -63,9 +63,9 @@ router.post('/', authenticateJWT, function (req, res, next) {
 
                     savesession(paymentid, JSON.stringify(jsonbody),"set","" ).then(function (resultVal) {
                     if (resultVal == "OK") {
-                        res.json([{
+                        res.json({
                             paymentid 
-                        }]);
+                        });
                     }
                     else {
                         console.error(error)
