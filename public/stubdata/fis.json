@@ -1,0 +1,22 @@
+
+[
+    {
+        "arrivaldate": "2020-09-18",
+        "arrivalgate": "GATE",
+        "arrivalstatus": "On Time",
+        "arrivalterminal": "3",
+        "arrivaltime": "09:55",
+        "departuredate": "2020-09-17",
+        "departuregate": "GATE",
+        "departurestatus": "On Time",
+        "departureterminal": "3",
+        "departuretime": "22:15",
+        "destination": "SIN",
+        "duration": 460,
+        "equipmentType": "77W",
+        "flightNumber": 470,
+        "numberOfStops": 0,
+        "operatingCarrier": "EY",
+        "origin": "AUH"
+    }
+]
