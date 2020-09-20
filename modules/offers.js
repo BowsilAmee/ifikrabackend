@@ -110,6 +110,8 @@ function parsexml(xmldoc) {
 
                 if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"] != null) {
 
+                    if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"] !=null)
+                    {
                     var jsonobject = obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"]["Service"]
 
                     for (let index = 0; index < jsonobject.length; index++) {
@@ -131,6 +133,7 @@ function parsexml(xmldoc) {
                     }
 
                     resolve(jsonbody);
+                }
                 }
                 else {
                     resolve("No Data Found.");
