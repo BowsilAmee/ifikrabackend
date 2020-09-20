@@ -110,7 +110,9 @@ function parsexml(xmldoc) {
 
                 if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"] != null) {
 
-                    if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"] !=null)
+                    if (typeof obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"] !== 'undefined')
+
+                    //if (obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"] !=null)
                     {
                     var jsonobject = obj["SOAP-ENV:Envelope"]["SOAP-ENV:Body"]["ns1:XXTransactionResponse"]["RSP"]["ServiceListRS"]["OptionalServices"]["Service"]
 
@@ -134,13 +136,18 @@ function parsexml(xmldoc) {
 
                     resolve(jsonbody);
                 }
+                else
+                {
+                        resolve(jsonbody);
+
+                }
                 }
                 else {
                     resolve("No Data Found.");
                 }
             }
             else {
-                reject(error);
+                resolve("No Data Found.");
             }
         });
     } catch (error) {
