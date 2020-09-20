@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "5f54af797f82eb0043ea9de1",
+    "paxid": "FF3092ED0201",
+    "flightno": "0206",
+    "depdate": "2020-09-06",
+    "status": "Requested",
+    "updatedby": "web",
+    "created": "1599385465432",
+    "lat": "24.42922",
+    "long": "54.64388",
+    "paxname": "ADETONA ADEBAYO",
+    "pnr": "FYPJSZ"
+  },
+  {
+    "_id": "5f54b1467f82eb0043ea9de2",
+    "paxid": "FF30C0930201",
+    "flightno": "0206",
+    "depdate": "2020-09-06",
+    "status": "Requested",
+    "updatedby": "web",
+    "created": "1599385926958",
+    "lat": "24.42922",
+    "long": "54.64388",
+    "paxname": "AGHA MOHAMMED SHWAN",
+    "pnr": "DAKXWS"
+  }
+]

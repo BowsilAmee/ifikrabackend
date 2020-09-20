@@ -1,0 +1,1775 @@
+[
+  {
+    "Flight": "0345",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:40AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MED",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0007",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:40AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - FRA",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0208",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:40AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BOM",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0151",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:45AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - ORD",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0290",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KTM",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0021",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MAN",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0462",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:00AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MEL",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0513",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:05AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - AMM",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0317",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:20AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - RUH",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0297",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:25AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0428",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:30AM",
+    "DepartureGate": "32",
+    "Destination": "AUH - MNL",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0025",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:35AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - LHR",
+    "Status": "OPENCI",
+    "AircraftType": "388"
+  },
+  {
+    "Flight": "0472",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:35AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - CGK",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0101",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:40AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - JFK",
+    "Status": "OPENCI",
+    "AircraftType": "388"
+  },
+  {
+    "Flight": "0450",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:45AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - SYD",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0615",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:50AM",
+    "DepartureGate": "TBA",
+    "Destination": "AUH - RBA",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0131",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:55AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - IAD",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0333",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:15AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - JED",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "5200",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:20AM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "C1C"
+  },
+  {
+    "Flight": "0183",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:50AM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - SYD",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0236",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:00PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BLR",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "9001",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:00PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9003",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:10PM",
+    "Destination": "AUH - KHI",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9005",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:20PM",
+    "Destination": "AUH - CAI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9007",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:30PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9011",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:35PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9009",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:35PM",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9015",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:40PM",
+    "Destination": "AUH - HKG",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9013",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:40PM",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9017",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:45PM",
+    "Destination": "AUH - KRT",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9019",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:45PM",
+    "Destination": "AUH - SEZ",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9021",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:50PM",
+    "Destination": "AUH - RBA",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9023",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:50PM",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9025",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:55PM",
+    "Destination": "AUH - CAI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9027",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:55PM",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0119",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "12:55PM",
+    "Destination": "AUH - MSQ",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0121",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:00PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "9031",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:00PM",
+    "Destination": "AUH - LHE",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9029",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:00PM",
+    "Destination": "AUH - CMN",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9033",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:05PM",
+    "Destination": "AUH - MNL",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9035",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:10PM",
+    "Destination": "AUH - MLE",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9037",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:20PM",
+    "Destination": "AUH - KHI",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9041",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:30PM",
+    "Destination": "AUH - LHE",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9039",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:30PM",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0311",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:40PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - JED",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9043",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:40PM",
+    "Destination": "AUH - GYD",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9045",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "01:50PM",
+    "Destination": "AUH - LHE",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9047",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:00PM",
+    "Destination": "AUH - MNL",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0975",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:05PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - SGN",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9051",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:05PM",
+    "Destination": "AUH - KHI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0282",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:05PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - COK",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0233",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:05PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9049",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:05PM",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9055",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:10PM",
+    "Destination": "AUH - CMN",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0017",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:10PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - LHR",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9053",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:10PM",
+    "Destination": "AUH - LOS",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0224",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:10PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - DEL",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9057",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:15PM",
+    "Destination": "AUH - CAI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9059",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:15PM",
+    "Destination": "AUH - ATH",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9061",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:20PM",
+    "Destination": "AUH - RBA",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9063",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:20PM",
+    "Destination": "AUH - KHI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0655",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:25PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - CAI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9065",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:25PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "9067",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:25PM",
+    "Destination": "AUH - LOS",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0204",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:25PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BOM",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "9071",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:30PM",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0303",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "321",
+    "FreeText": "BOARDING"
+  },
+  {
+    "Flight": "9069",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:30PM",
+    "Destination": "AUH - SEZ",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0327",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:35PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - DMM",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "9073",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:35PM",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9075",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:40PM",
+    "Destination": "AUH - MLE",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "9077",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "02:50PM",
+    "Destination": "AUH - ATH",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "9079",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "03:00PM",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0386",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "04:40PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0375",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "05:00PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BAH",
+    "Status": "OPENCI",
+    "Indicator": "@",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0307",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "08:25PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0256",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:00PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - CCU",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0351",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:05PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - RUH",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0325",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:25PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - DMM",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0280",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - COK",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "0800",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "Destination": "AUH - PEK",
+    "DestinationFinal": "NGO",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0888",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - PKX",
+    "DestinationFinal": "NGO",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0309",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KWI",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0484",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BNE",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0999",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:30PM",
+    "Destination": "AUH - PEK",
+    "DestinationFinal": "NGO",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0377",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:35PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BAH",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0268",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:35PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MAA",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "0402",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:40PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BKK",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0388",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:40PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0460",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:45PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MEL",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0272",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:45PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - TRV",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0862",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:45PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - PVG",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "0876",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:50PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - ICN",
+    "Status": "OPENCI",
+    "AircraftType": "388"
+  },
+  {
+    "Flight": "0878",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:50PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - NRT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0216",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BLR",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0657",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - CAI",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0274",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - HYD",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0454",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "09:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - SYD",
+    "Status": "OPENCI",
+    "AircraftType": "388"
+  },
+  {
+    "Flight": "0834",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:00PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - HKG",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0206",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:10PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - BOM",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0470",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:15PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - SIN",
+    "Status": "OPENCI",
+    "AircraftType": "77W"
+  },
+  {
+    "Flight": "0218",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:15PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - DEL",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0231",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:35PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - ISB",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "0250",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - CCJ",
+    "Status": "OPENCI",
+    "AircraftType": "32A"
+  },
+  {
+    "Flight": "0241",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "10:55PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - LHE",
+    "Status": "OPENCI",
+    "AircraftType": "321"
+  },
+  {
+    "Flight": "0288",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:00PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - AMD",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  },
+  {
+    "Flight": "0418",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:05PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KUL",
+    "Status": "OPENCI",
+    "AircraftType": "781"
+  },
+  {
+    "Flight": "1100",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1105",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1110",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1115",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1120",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1125",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1130",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1135",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1140",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1145",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1150",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1155",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1160",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1165",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1170",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1175",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1180",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1185",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1190",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1195",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1200",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1101",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1106",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1111",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1116",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1121",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1126",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1131",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1136",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1141",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1146",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1151",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1156",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1161",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1166",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1171",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1176",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1181",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1186",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1191",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1196",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1102",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1107",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1112",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1117",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1122",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1127",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1132",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1137",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1142",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1147",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1152",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1157",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1162",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1167",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1172",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1177",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1182",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1187",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1192",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1197",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1103",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1108",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1113",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1118",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1123",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1128",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1133",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1138",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1143",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1148",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1153",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1158",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1163",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1168",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1173",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1178",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1183",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1188",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1193",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1198",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1104",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1109",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1114",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1119",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1124",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1129",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1134",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1139",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1144",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1149",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1154",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1159",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1164",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1169",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1174",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1179",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1184",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1189",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1194",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "1199",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:30PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - MCT",
+    "Status": "OPENCI",
+    "AircraftType": "789"
+  },
+  {
+    "Flight": "0221",
+    "DepartureDate": "2020-09-18",
+    "DepartureTime": "11:40PM",
+    "DepartureGate": "GATE",
+    "Destination": "AUH - KHI",
+    "Status": "OPENCI",
+    "AircraftType": "320"
+  }
+]

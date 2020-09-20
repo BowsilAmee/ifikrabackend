@@ -1,0 +1,102 @@
+[
+  {
+    "Description": "Instant Upgrade",
+    "SubCode": "UP1",
+    "ServiceCode": "UP1",
+    "Method": "EA",
+    "Amount": "500",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "WIFLY",
+    "SubCode": "UP1",
+    "ServiceCode": "UP1",
+    "Method": "EA",
+    "Amount": "50",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "Lounge Access",
+    "SubCode": "UP1",
+    "ServiceCode": "UP1",
+    "Method": "EA",
+    "Amount": "50",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO33LB 15KG BAGGAGE",
+    "SubCode": "0C1",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "1660",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO44LB 20KG BAGGAGE",
+    "SubCode": "0C2",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "2210",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO55LB 25KG BAGGAGE",
+    "SubCode": "0C4",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "2760",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO66LB 30KG BAGGAGE",
+    "SubCode": "0C5",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "3310",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO35KG BAGGAGE",
+    "SubCode": "0C7",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "3860",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO11LB 5KG BAGGAGE",
+    "SubCode": "0CW",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "560",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  },
+  {
+    "Description": "UPTO22LB 10KG BAGGAGE",
+    "SubCode": "0CZ",
+    "ServiceCode": "OC",
+    "Method": "EA",
+    "Amount": "1110",
+    "Currency": "AED",
+    "ValidatingCarrier": "EY",
+    "Source": "EYD"
+  }
+]

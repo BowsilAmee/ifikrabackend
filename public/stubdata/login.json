@@ -1,0 +1,8 @@
+[
+  {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjMxODUzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwNDA3NTE2LCJleHAiOjE2MDA0MDkzMTZ9.qbJW8fnQFkC5ipPfSkt8QPvLJJvmt3UeMfoK_RYzTFE",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjMxODUzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjAwNDA3NTE2fQ.nNFXjoDijKQbk3plIQh58EcQNpta08-0A7VZTPKdxa4",
+    "sessionexpire": "2020-09-18T06:08:36.726Z",
+    "sabresession": "Shared/IDL:IceSess\\/SessMgr:1\\.0.IDL/Common/!ICESMS\\/ACPCRTD!ICESMSLB\\/CRT.LB!1600407517464!3684!261"
+  }
+]
