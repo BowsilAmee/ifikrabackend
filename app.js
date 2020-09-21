@@ -26,6 +26,8 @@ var sessioncreate = require('./routes/createsession');
 var parsebcbp = require('./routes/parsebcbp');
 var assignStation = require('./routes/assignStation');
 
+var addtopall = require('./routes/addtoPALL');
+var sabercommand = require('./routes/sabercommand');
 
 var app = express();
 
@@ -59,6 +61,9 @@ app.use('/paymentmaster', paymentmaster);
 app.use('/paymentsession', sessioncreate)
 app.use('/parsebcbp', parsebcbp);
 app.use('/assignStation', assignStation);
+app.use('/addtopall', addtopall);
+app.use('/sabercommand', sabercommand);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

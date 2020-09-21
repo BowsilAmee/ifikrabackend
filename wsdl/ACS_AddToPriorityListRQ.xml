@@ -1,0 +1,46 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:v300="http://services.sabre.com/ACS/BSO/addToPriorityList/v3">
+   <soapenv:Header>
+      <eb:MessageHeader eb:id="" eb:version="1.0" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader">
+         <eb:From>
+            <eb:PartyId eb:type="URI">Client</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId eb:type="URI">Server</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>IPCC</eb:CPAId>
+         <eb:ConversationId>9DB7_921682_1204548352874</eb:ConversationId>
+         <eb:Service>ACS_AddToPriorityListRQ</eb:Service>
+         <eb:Action>ACS_AddToPriorityListRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>mid:1</eb:MessageId>
+            <eb:Timestamp>2008-03-03T12:45:52</eb:Timestamp>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">binaryTokenval</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v300:ACS_AddToPriorityListRQ>
+         <Itinerary>
+            <Airline>EY</Airline>
+            <Flight>fltno</Flight>
+            <BookingClass>bookingclassinfo</BookingClass>
+            <DepartureDate>depdate</DepartureDate>
+            <Origin>orignstation</Origin>
+         </Itinerary>
+         <PassengerInfoList>
+            <!--1 to 15 repetitions:-->
+            <PassengerInfo>
+               <LastName>lastnameval</LastName>
+               <PassengerID>paxid</PassengerID>
+               <PriorityClassificationInfo>
+                  <PriorityCode>PriorityCodeval</PriorityCode>
+               </PriorityClassificationInfo>
+               <NOBAGS>0</NOBAGS>
+            </PassengerInfo>
+         </PassengerInfoList>
+         <Client>KIOSK</Client>
+      </v300:ACS_AddToPriorityListRQ>
+   </soapenv:Body>
+</soapenv:Envelope>
