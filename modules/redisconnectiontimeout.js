@@ -18,11 +18,13 @@ module.exports = (jwtid, dbvalue, gettype, timeoutval, callback) => {
         case "set":
             client.set(jwtid, dbvalue,'EX',timeoutval, (err, reply) => {
                 callback(err, reply);
+                client.quit();
             });
             break;
         case "get":
             client.get(jwtid, (err, reply) => {
                 callback(err, reply);
+                client.quit();
             });
             break;
         case "delete":
