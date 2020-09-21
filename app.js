@@ -24,7 +24,7 @@ var paymentmaster = require('./routes/paymentmaster');
 var sessioncreate = require('./routes/createsession');
 
 var parsebcbp = require('./routes/parsebcbp');
-
+var assignStation = require('./routes/assignStation');
 
 
 var app = express();
@@ -58,6 +58,7 @@ app.use('/offer',offerslist);
 app.use('/paymentmaster', paymentmaster);
 app.use('/paymentsession', sessioncreate)
 app.use('/parsebcbp', parsebcbp);
+app.use('/assignStation', assignStation);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

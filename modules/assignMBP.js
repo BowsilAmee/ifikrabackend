@@ -1,5 +1,5 @@
 const xml2json = require('xml2json');
-module.exports = (contextid, binarytoken, callback) => {
+module.exports = (binarytoken, callback) => {
     // let sum = a + b
     let error = null
     const soapRequest = require('easy-soap-request');
@@ -17,11 +17,11 @@ module.exports = (contextid, binarytoken, callback) => {
 
     var str = xml.toString();
     var mapObj = {
-        binaryToken: binarytoken
+        binaryTokenval: binarytoken
       
     };
 
-    str = str.replace(/binaryToken/gi, function (matched) {
+    str = str.replace(/binaryTokenval/gi, function (matched) {
         return mapObj[matched];
     });
 
@@ -50,11 +50,11 @@ function parsexml(xmldoc) {
             const obj = xml2json.toJson(xmldoc, { object: true });
             if (obj != null) {
 
-                if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"] != null) {
-                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"]["AirportFlight"]);
+                if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AssignBoardingPassPrinterRS"] != null) {
+                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AssignBoardingPassPrinterRS"]);
                 }
                 else {
-                    resolve("No Flights Found.");
+                    resolve("Unable to assign Printer.");
                 }
             }
             else {

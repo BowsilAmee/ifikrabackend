@@ -52,8 +52,8 @@ function parsexml(xmldoc) {
             const obj = xml2json.toJson(xmldoc, { object: true });
             if (obj != null) {
 
-                if (obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"] != null) {
-                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ns3:ACS_AirportFlightListRS"]["AirportFlightList"]["AirportFlight"]);
+                if (obj["soap-env:Envelope"]["soap-env:Body"]["ContextChangeRS"]["stl:ApplicationResults"] != null) {
+                    resolve(obj["soap-env:Envelope"]["soap-env:Body"]["ContextChangeRS"]["stl:ApplicationResults"]);
                 }
                 else {
                     resolve("No Flights Found.");

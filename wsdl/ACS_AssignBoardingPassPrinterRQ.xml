@@ -17,7 +17,7 @@
             </mes:MessageData>
         </mes:MessageHeader>
         <wsse:Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
-            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">binaryToken</wsse:BinarySecurityToken>
+            <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">binaryTokenval</wsse:BinarySecurityToken>
         </wsse:Security>
     </SOAP-ENV:Header>
     <SOAP-ENV:Body>

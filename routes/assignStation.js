@@ -39,19 +39,33 @@ router.post('/', authenticateJWT, function (req, res, next) {
             getbinarytoken(token).then(function (binarytoken) {
 
                 var jsonObject = eval('(' + binarytoken + ')');
-                const { airline, flightno, depdate, origin, queryval } = req.body;
+                const { station } = req.body;
 
-                const add = require("../modules/getpaxlist.js")
+                changeContext(station, jsonObject["binarytoken"]).then(function (statusval) {
+                    if (statusval != null)
+                    {
+                        assignMBP(jsonObject["binarytoken"]).then(function (statusval) {
+                            
+                           if (statusval != null)
+                           { res.send(200); }
+                           else{
+                               res.send(500);
+                           }
 
-                add(airline, flightno, depdate, origin, queryval, jsonObject.binarytoken, (err, result) => {
-                    if (err) { // Best practice to handle your errors
-                        console.log(err)
-                    } else { // Implement the logic, what you want to do once you recieve the response back 
-                        console.log(result);
-                        if (result != null) { res.send(result) } else { res.send("No pax data Avaliable") }
+                        }).catch(function (error) {
+                            console.error(error)
+                            return res.sendStatus(500, "unable to auth user or system Down");
+                        });
 
                     }
-                })
+
+        
+
+
+                }).catch(function (error) {
+                    console.error(error)
+                    return res.sendStatus(500, "unable to auth user or system Down");
+                });
 
 
             }).catch(function (error) {
@@ -71,7 +85,6 @@ router.post('/', authenticateJWT, function (req, res, next) {
         console.log(error);
     }
 });
-
 //To Generate the Sabre session for the Sabre Traction
 function getbinarytoken(jwttoken) {
     try {
@@ -95,5 +108,56 @@ function getbinarytoken(jwttoken) {
 
     }
 }
+
+//To Generate the Sabre session for the Sabre Traction
+function changeContext(binarytoken, stationid) {
+    try {
+        return new Promise(function (resolve, reject) {
+
+            const add = require("../modules/changecontext.js")
+            add(binarytoken, stationid, (err, result) => {
+                if (err) { // Best practice to handle your errors
+                    console.log(err)
+                } else { // Implement the logic, what you want to do once you recieve the response back 
+                    console.log(result)
+                    resolve(result);
+                }
+            })
+
+
+        });
+    } catch (error) {
+
+        reject(error);
+
+    }
+}
+
+
+//To Generate the Sabre session for the Sabre Traction
+function assignMBP(binarytoken) {
+    try {
+        return new Promise(function (resolve, reject) {
+
+            const add = require("../modules/assignMBP.js")
+            add(binarytoken, (err, result) => {
+                if (err) { // Best practice to handle your errors
+                    console.log(err)
+                } else { // Implement the logic, what you want to do once you recieve the response back 
+                    console.log(result)
+                    resolve(result);
+                }
+            })
+
+
+        });
+    } catch (error) {
+
+        reject(error);
+
+    }
+}
+
+
 
 module.exports = router;
