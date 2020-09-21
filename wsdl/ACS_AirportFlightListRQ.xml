@@ -26,7 +26,7 @@
             <Airline>flightno</Airline>
              <DepartureDate>fltdate</DepartureDate>
             <Origin>station</Origin>
-            <HoursFromCurrentTime>hrsfrom</HoursFromCurrentTime>
+       <HoursFromCurrentTime>hrsfrom</HoursFromCurrentTime>
          </FlightInfo>
          <Client>KIOSK</Client>
       </n1:ACS_AirportFlightListRQ>
