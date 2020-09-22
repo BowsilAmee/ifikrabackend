@@ -69,7 +69,7 @@ function parsexml(xmldoc) {
 
 
                 objval = {
-                    'Description': "Instant Upgrade",
+                    'Description': "INSTANTI UPGRADE",
                     'SubCode': "UP1",
                     'ServiceCode': "UP1",
                     "Method": "EA",
@@ -94,7 +94,7 @@ function parsexml(xmldoc) {
                 jsonbody.push(objval);
 
                 objval = {
-                    'Description': "Lounge Access",
+                    'Description': "LOUNGE ACCESS",
                     'SubCode': "UP1",
                     'ServiceCode': "UP1",
                     "Method": "EA",
