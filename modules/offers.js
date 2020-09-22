@@ -69,7 +69,7 @@ function parsexml(xmldoc) {
 
 
                 objval = {
-                    'Description': "INSTANTI UPGRADE",
+                    'Description': "INSTANT UPGRADE",
                     'SubCode': "UP1",
                     'ServiceCode': "UP1",
                     "Method": "EA",
